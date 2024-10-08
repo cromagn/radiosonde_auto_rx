@@ -815,7 +815,6 @@ def main():
             format="%(asctime)s %(levelname)s:%(message)s", level=logging_level
         )
 
-
     # Set the requests/socketio loggers (and related) to only display critical log messages.
     logging.getLogger("requests").setLevel(logging.CRITICAL)
     logging.getLogger("urllib3").setLevel(logging.CRITICAL)
